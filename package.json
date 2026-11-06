@@ -1,0 +1,29 @@
+{
+  "name": "tugas-pemweb-prisma",
+  "version": "1.0.0",
+  "description": "Tugas Pemrograman Web - REST API CRUD Mahasiswa dengan Express & Prisma",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "migrate": "prisma migrate dev",
+    "studio": "prisma studio"
+  },
+  "keywords": [
+    "express",
+    "prisma",
+    "rest-api",
+    "crud"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prisma": "^6.19.3"
+  }
+}
