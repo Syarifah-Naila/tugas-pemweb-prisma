@@ -1,0 +1,21 @@
+// Konfigurasi Prisma
+// Dokumentasi: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Model/tabel mahasiswa
+model Mahasiswa {
+  id        Int      @id @default(autoincrement())
+  nama      String
+  nrp       String   @unique
+  jurusan   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
